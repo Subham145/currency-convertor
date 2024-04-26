@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.container {
+    margin: auto;
+    min-height: 100vh;
+    background-color: #202020;
+    padding: 2em 0;
+    color: #040203;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency-container {
+    height: fit-content;
+    background-color: #7cb889;
+    padding: 3em;
+    border-radius: 40px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+label {
+    font-size: 1.5em;
+    margin-bottom:.4em;
+}
+
+#amount {
+    width: 300px;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 3em;
+    border: 3px solid black;
+    background: transparent;
+    color: black;
+}
+
+#amount:focus {
+    border: 3px solid white;
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(0,0,0,0.6);
+    opacity: 1; /* Firefox */
+}
+
+.select-box {
+    margin-top: 20px;
+}
+
+.select-option {
+    font-size: 16px;
+    color: #333;
+    padding: 20px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.3;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    outline: none;
+    border-radius: 20px;
+}
+
+#convert-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#convert-btn:hover {
+    background-color: #3e8e41;
+}
+
+.result {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.error {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color:red;
+}
